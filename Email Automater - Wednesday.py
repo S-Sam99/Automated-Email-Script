@@ -152,8 +152,18 @@ def main():
 <li>Please update your opp statuses this week on NS if you have not already!</li>
 </ul>
     Thank you for your diligence in updating these
-    </p>
+    </p> <br>
     </body>
+    <div></div>--
+    <footer>
+    <p style="color:#2E3590; font-family:wide; font-size:12pt; font-weight:bold">Steven Sam
+    <div style="font-weight:bold; color:grey">Coordinator, Business Development</div></p>
+    <p style="color:grey">1.604.568.0313 <br>
+    <u style="color:grey">www.appnovation.com</u></p>
+    <a href="www.appnovation.com">
+    <img src = "Appno logo.jpg" alt="Appnovation logo" style="width:224px; height:36.9px">
+    </a>
+    </footer>
     </html>"""
 
     # sends 2 separate emails
