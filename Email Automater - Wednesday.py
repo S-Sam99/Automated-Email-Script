@@ -7,8 +7,8 @@ from string import Template
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-MY_ADDRESS = 'stevensam67@gmail.com'
-PASSWORD = 'nqkuyeobdqxulael'
+MY_ADDRESS = 'steven.sam@appnovation.com'
+PASSWORD = 'cmicsebsmtyukafu'
 
 def check_date_number(date):
     d = date
@@ -79,9 +79,9 @@ def submit_opps_email(text, date):
     #email_list = separator.join(emails)
             
     # setup the parameters of the message
-    message_txt['From']=MY_ADDRESS
+    message_txt['From']='Steven Sam <'+MY_ADDRESS+'>'
     message_txt['Subject']="Submitting Pre Sales Opps - Week of " + date
-    message_txt['To'] = 'steven.sam68@gmail.com, steven.sam@appnovation.com'
+    message_txt['To'] = 'Sales-AMER@appnovation.com, presale@appnovation.com'
 
     # send the message via the server set up earlier.
     s.send_message(message_txt)    
@@ -101,9 +101,9 @@ def allocations_email(text, date):
     #email_list = separator.join(emails)
             
     # setup the parameters of the message
-    message_txt['From']=MY_ADDRESS
+    message_txt['From']='Steven Sam <'+MY_ADDRESS+'>'
     message_txt['Subject']="[Pre Sales] Allocation - Week of " + date + " - Calling for Resource Requests"
-    message_txt['To'] = 'steven.sam68@gmail.com, steven.sam@appnovation.com'
+    message_txt['To'] = 'presale@appnovation.com, pm@appnovation.com'
         
     # send the message via the server set up earlier.
     s.send_message(message_txt)    
@@ -154,16 +154,6 @@ def main():
     Thank you for your diligence in updating these
     </p> <br>
     </body>
-    <div></div>--
-    <footer>
-    <p style="color:#2E3590; font-family:wide; font-size:12pt; font-weight:bold">Steven Sam
-    <div style="font-weight:bold; color:grey">Coordinator, Business Development</div></p>
-    <p style="color:grey">1.604.568.0313 <br>
-    <u style="color:grey">www.appnovation.com</u></p>
-    <a href="www.appnovation.com">
-    <img src = "Appno logo.jpg" alt="Appnovation logo" style="width:224px; height:36.9px">
-    </a>
-    </footer>
     </html>"""
 
     # sends 2 separate emails
