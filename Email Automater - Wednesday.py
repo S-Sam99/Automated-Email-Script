@@ -7,8 +7,8 @@ from string import Template
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-MY_ADDRESS = 'steven.sam@appnovation.com'
-PASSWORD = 'cmicsebsmtyukafu'
+MY_ADDRESS = '-Enter Email Here-'
+PASSWORD = '-Enter Email Access Code Here-'
 
 def check_date_number(date):
     d = date
@@ -79,9 +79,9 @@ def submit_opps_email(text, date):
     #email_list = separator.join(emails)
             
     # setup the parameters of the message
-    message_txt['From']='Steven Sam <'+MY_ADDRESS+'>'
+    message_txt['From']='-Enter First & Last Name Here- <'+MY_ADDRESS+'>'
     message_txt['Subject']="Submitting Pre Sales Opps - Week of " + date
-    message_txt['To'] = 'Sales-AMER@appnovation.com, presale@appnovation.com'
+    message_txt['To'] = '-Enter Receiver Emails Here-'
 
     # send the message via the server set up earlier.
     s.send_message(message_txt)    
@@ -101,9 +101,9 @@ def allocations_email(text, date):
     #email_list = separator.join(emails)
             
     # setup the parameters of the message
-    message_txt['From']='Steven Sam <'+MY_ADDRESS+'>'
+    message_txt['From']='-Enter First & Last Name Here- <'+MY_ADDRESS+'>'
     message_txt['Subject']="[Pre Sales] Allocation - Week of " + date + " - Calling for Resource Requests"
-    message_txt['To'] = 'presale@appnovation.com, pm@appnovation.com'
+    message_txt['To'] = '-Enter Reciever Emails Here'
         
     # send the message via the server set up earlier.
     s.send_message(message_txt)    
@@ -126,11 +126,11 @@ def main():
         <br>
         <u>The asks:</u><br>
         <br>
-        1. Please submit any new opps intending to start next week no later than Thursday 9AM PST to presale@appnovation.com for housekeeping processing & to allow delivery PMs to be able to work with the Domain Leads & request resources from Resourcing with some buffer time for back and forth discussions. You can still submit opps to presale@appnovation.com after the Thursday deadline but when times get busy it's best to get them in as soon as possible on Thursday.<br>
+        1. Please submit any new opps intending to start next week no later than Thursday 9AM PST to -Enter Pre-Sales Email Here- for housekeeping processing & to allow delivery PMs to be able to work with the Domain Leads & request resources from Resourcing with some buffer time for back and forth discussions. You can still submit opps to -Enter Pre-Sale Email Here- after the Thursday deadline but when times get busy it's best to get them in as soon as possible on Thursday.<br>
         <br>  
         <u>The nags (if you have not done so already):</u><br>
         <br>
-        2. Please send any finalized proposals to presale@appnovation.com so that we can archive and document them as needed.<br>
+        2. Please send any finalized proposals to -Enter Pre-Sale Email Here- so that we can archive and document them as needed.<br>
         <br>
         Thank you for your diligence in updating these.
         </p>
@@ -143,8 +143,8 @@ def main():
         <p>Hi All,<br>
         <br>
         <b><ul style="list-style-type:circle;">
-<li>Sending a friendly reminder to Pre Sales PMs to ensure they input their staffing requests onto the sheet <a href="https://docs.google.com/spreadsheets/d/1dQoYhW6YEf4zDGQF1BLhWhDez5EbwZGpCeKMbb8fi1I/edit#gid=658304344">here</a> by Thursday 10:00am PST for pre-sales efforts for next week.</li>
-<li>Please click on last Friday's sheet and fill in any opp notes that you have in <a href="https://docs.google.com/spreadsheets/d/1Fn4cpu5R26VN1oY0-jmAMAv909geS5Bcv2YhwpB39bg/edit#gid=123590900">here</a>.</li>
+<li>Sending a friendly reminder to Pre Sales PMs to ensure they input their staffing requests onto the sheet <a href="-Enter Resource Request Sheet Link Here-">here</a> by Thursday 10:00am PST for pre-sales efforts for next week.</li>
+<li>Please click on last Friday's sheet and fill in any opp notes that you have in <a href="-Enter Opp Summary Sheet Link Here-">here</a>.</li>
     </ul></b><br>
     This covers all pre-sales that are scheduled to start, finish, continue, or have been delayed to next week or possibly require follow-up. If you are not sure as to the status of your opportunity (i.e. if there will be activity on the opp), please reach out to the BD/CS representative in question.
     <br>  
