@@ -1,9 +1,2 @@
-pm@appnovation.com
-tes-fte@appnovation.com
-ianc@appnovation.com>
-leet@appnovation.com
-andrewwong@appnovation.com
-jeffreym@appnovation.com
-adam@appnovation.com
-ClientServices-AMER@appnovation.com
-shanshan@appnovation.com
+Enter the email addressess to BCC on Thursday here
+*Make sure there is only 1 email per line
