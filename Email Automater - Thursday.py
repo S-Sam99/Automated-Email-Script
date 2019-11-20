@@ -5,8 +5,8 @@ from string import Template
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-MY_ADDRESS = 'steven.sam@appnovation.com'
-PASSWORD = 'cmicsebsmtyukafu'
+MY_ADDRESS = -Email Here-
+PASSWORD = -Email Access Code Here-
 
 def get_contacts(filename):
     """
@@ -48,9 +48,9 @@ def main():
     email_list = separator.join(emails)
             
     # setup the parameters of the message
-    message_txt['From']='Steven Sam <'+MY_ADDRESS+'>'
-    message_txt['Subject']="[Pre Sales]: Check OA Buckets"
-    message_txt['To'] = 'presale@appnovation.com'
+    message_txt['From']='-Enter First & Last Name Here- <'+MY_ADDRESS+'>'
+    message_txt['Subject']="-Enter Subject Line here-"
+    message_txt['To'] = '-Enter reciever emails here-'
     message_txt['Bcc'] = email_list
         
 
