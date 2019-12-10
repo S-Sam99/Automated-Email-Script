@@ -162,7 +162,7 @@ def main():
     submit_opps_email(text_1, d1)
     allocations_email(text_2, d1)
 
-    print('Emails Sent!!!')
+    print('Success!!!')
     
 if __name__ == '__main__':
     main()
