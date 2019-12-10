@@ -51,8 +51,8 @@ def main():
             
     # setup the parameters of the message
     message_txt['From']='-Enter First & Last Name Here- <'+MY_ADDRESS+'>'
-    message_txt['Subject']="-Enter Pre-Sales email here-"
-    message_txt['To'] = '-Enter reciever emails here-'
+    message_txt['Subject']="[Pre Sales]: Check OA Buckets"
+    message_txt['To'] = '-Enter Pre-Sales email here-'
     message_txt['Bcc'] = email_list
         
 
