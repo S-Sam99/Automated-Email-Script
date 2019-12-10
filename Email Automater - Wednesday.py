@@ -33,12 +33,12 @@ def adjust_date(date):
 
     return check_date_number(adjusted_date)
 
-
+#Get's the date you send the email
 def getDate(date):
     d1 = date.strftime("%B") #Current date's month
     d2 = date.strftime("%d") #Current day in month
     d2 = adjust_date(d2) #Adds wording at end of date (ex. 10 == 10th)
-    d3 = date.strftime("%w") #Current weekday as a number
+    d3 = date.strftime("%w") #Current weekday as a number (ex. Sunday = 1)
     print(d1,d2,d3) #for reference internal
     d = d1 + ' ' + d2
     return d, d3
@@ -67,6 +67,7 @@ def read_file(filename):
         message_file_content = template_file.read()
     return  MIMEText(message_file_content)
 
+#Sends emails to PM Group
 def submit_opps_email(text, date):
     message_txt = MIMEText(text, 'html')
 
@@ -89,6 +90,7 @@ def submit_opps_email(text, date):
     # Terminate the SMTP session and close the connection
     s.quit()
 
+#Sends emails to Sales Group
 def allocations_email(text, date):
     message_txt = MIMEText(text, 'html')
 
@@ -117,7 +119,7 @@ def main():
     d1, d2 = getDate(my_date)
     #length, emails = get_contacts('mycontacts.txt') # read contacts
     # message_txt = read_file('message.txt')
-
+   
     text_1 = """\
         <html>
         <head></head>
