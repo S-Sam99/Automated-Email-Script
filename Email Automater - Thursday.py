@@ -8,6 +8,7 @@ from email.mime.text import MIMEText
 MY_ADDRESS = -Email Here-
 PASSWORD = -Email Access Code Here-
 
+#Accesses information in contacts file
 def get_contacts(filename):
     """
     Return emails containing email addresses
@@ -22,6 +23,7 @@ def get_contacts(filename):
         length = len(emails)
     return length, emails
 
+#Reads the contacts file
 def read_file(filename):
     """
     Returns a Template object comprising the contents of the 
@@ -49,7 +51,7 @@ def main():
             
     # setup the parameters of the message
     message_txt['From']='-Enter First & Last Name Here- <'+MY_ADDRESS+'>'
-    message_txt['Subject']="-Enter Subject Line here-"
+    message_txt['Subject']="-Enter Pre-Sales email here-"
     message_txt['To'] = '-Enter reciever emails here-'
     message_txt['Bcc'] = email_list
         
